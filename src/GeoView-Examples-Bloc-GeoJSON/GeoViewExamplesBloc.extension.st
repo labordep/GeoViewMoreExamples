@@ -1,13 +1,13 @@
-Extension { #name : 'GeoViewExamplesBloc' }
+Extension { #name : 'GeoViewExamples' }
 
 { #category : '*GeoView-Examples-Bloc-GeoJSON' }
 GeoViewExamplesBloc class >> exampleWithGeoJSON [
 		
 	| element layer datas brest |
-	element := BlGeoViewAeElement new.
+	element := GeoViewAeElement new.
 
 	"create GeoJSON map layer"
-	layer := GeoViewUserToDisplayToGraphicLayer new layerName: #geoJSON.
+	layer := GeoViewDomainObjectsLayer new layerName: #geoJSON.
 	layer setProcessData: GeoCircleProcessData new for: GeoCircle.
 	layer setProcessData: GeoObjectWrapperForGJFeatureProcessData new for: GeoObjectWrapper.
 	
