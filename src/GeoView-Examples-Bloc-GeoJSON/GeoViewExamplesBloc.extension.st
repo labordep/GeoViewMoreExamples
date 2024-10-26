@@ -1,7 +1,7 @@
 Extension { #name : 'GeoViewExamples' }
 
 { #category : '*GeoView-Examples-Bloc-GeoJSON' }
-GeoViewExamplesBloc class >> exampleWithGeoJSON [
+GeoViewExamples class >> exampleWithGeoJSON [
 		
 	| element layer datas brest |
 	element := GeoViewAeElement new.
