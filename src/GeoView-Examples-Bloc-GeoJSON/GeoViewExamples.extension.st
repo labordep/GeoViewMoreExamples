@@ -7,9 +7,9 @@ GeoViewExamples class >> exampleWithGeoJSON [
 	element := GeoViewAeElement new.
 
 	"create GeoJSON map layer"
-	layer := GeoViewDomainObjectsLayer new layerName: #geoJSON.
-	layer setProcessData: GeoCircleProcessData new for: GeoCircle.
-	layer setProcessData: GeoObjectWrapperForGJFeatureProcessData new for: GeoObjectWrapper.
+	layer := GeoViewDomainObjectsLayer new name: #geoJSON.
+	layer setProcessData: GeoCircleProcessData new forClass: GeoCircle.
+	layer setProcessData: GeoObjectWrapperForGJFeatureProcessData new forClass: GeoObjectWrapper.
 	
 	element addLayer: layer.
 
